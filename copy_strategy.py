@@ -684,6 +684,8 @@ def main():
         all_open_trades_db = sqlalchemy.create_engine(f'sqlite:///all_pos.db')
         trades_db = sqlalchemy.create_engine(f'sqlite:///my_pos.db')
         #all_strategies_pos(all_open_trades_db)
+        global db
+        db = trades_db
 
         ids = []
 
